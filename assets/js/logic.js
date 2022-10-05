@@ -4,11 +4,11 @@
 // timerId
 
 // variables to reference DOM elements
-var questionsEl = document.getElementById('questions');
+// var questionsEl = document.getElementById('questions');
 
 
 /// FUNCTION TO START THE QUIZ
-function startQuiz() {
+// function startQuiz() {
     // hide start screen 
 
     // un-hide questions section
@@ -17,11 +17,11 @@ function startQuiz() {
 
     // show starting time
 
-    getQuestion();
-}
+    // getQuestion();
+// }
 
 /// FUNCTION TO GET/SHOW EACH QUESTION ///
-function getQuestion() {
+// function getQuestion() {
     // get current question object from array
 
     // update title with current question
@@ -35,26 +35,26 @@ function getQuestion() {
     // display on the page
 
     // } 
-}
+// }
 
-/// FUNCTION FOR CLICKING A QUESTION ///
-function questionClick(event) {
+/// FUNCTION FOR CLICKING AN ANSWER ///
+// function answerClick(event) {
 
     // if the clicked element is not a choice button, do nothing.
-    if (something) {
+    // if (something) {
 
-    }
+    // }
 
-    if (something) {
+    // if (something) {
         // check if user guessed wrong
         // penalize time
 
         // display new time on page
 
         // give them feedback, letting them know it's wrong
-    } else {
+    // } else {
         // give them feedback, letting them know it's right
-    }
+    // }
 
     // flash right/wrong feedback on page for a short period of time
 
@@ -63,10 +63,10 @@ function questionClick(event) {
     // check if we've run out of questions
     // if so, end the quiz
     // else, get the next question
-}
+// }
 
 /// FUNCTION TO END THE QUIZ ///
-function quizEnd() {
+// function quizEnd() {
     // stop timer
 
     // show end screen
@@ -74,16 +74,16 @@ function quizEnd() {
     // show final score
 
     // hide questions section
-}
+// }
 
 /// FUNCTION FOR UPDATING THE TIME ///
-function clockTick() {
+// function clockTick() {
     // update time
 
     // check if user ran out of time
-}
+// }
 
-function saveHighscore() {
+// function saveHighScore() {
     // get value of input box - for initials
 
     // make sure value wasn't empty
@@ -94,7 +94,7 @@ function saveHighscore() {
     // save to localstorage
 
     // redirect to next page
-}
+// }
 
 /// CLICK EVENTS ///
 // user clicks button to submit initials
