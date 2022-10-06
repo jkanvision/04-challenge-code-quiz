@@ -10,13 +10,13 @@
     </head>
 
     <body>
-        <header id="header" class="hide">
+        <header id="header">
             <!-- <a> tag that references highscores.html so user could go straight to the scores if they want to -->
             <a href="highscore.html">View High Scores</a>
             <!-- span with timer in it -->
-            <span>
-                <span id="stopWatch">Time:</span>
-                <span id="timeRemaining">60</span>
+            <span id="stop-watch" class="hide">
+                <span>Time: </span>
+                <span id="time-remaining">60</span>
             </span>
 
         </header>
@@ -32,7 +32,7 @@
             </div>
 
             <div id="questions" class="hide">
-                <h2 id="question-title"></h2>
+                <h2 id="question-title">question 1</h2>
                 <div id="choices" class="choices">
                     <!-- answer buttons -->
                     <!-- <button id="answer-1" class="btn">1.</button>
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <div id="end-screen">
+            <div id="end-screen" class="hide end-screen">
                 <h2 id="all-done">All done!</h2>
                 <p>Your final score is <span id="final-score"></span>.</p>
                 <p>

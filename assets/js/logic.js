@@ -1,8 +1,9 @@
 // variables to keep track of quiz state
 // currentQuestion
-var currentQuestion = [];
-// time
-
+// var currentQuestion = [question-1, question-2, question-3];
+// var posedQuestions = [];
+// // time
+var time = 59;
 // timerId
 
 
@@ -11,19 +12,40 @@ var questionsEl = document.getElementById("questions");
 var startBtnEl = document.getElementById("start-btn");
 var submitBtnEl = document.getElementById("submit");
 var startScreenEl = document.getElementById("start-screen");
-var initialsEl = document.getElementById("initials")
-var timeRemainingEl = document.getElementById("timeRemaining");
+var initialsEl = document.getElementById("initials");
+var stopWatchEl = document.getElementById("stop-watch")
+var timeRemainingEl = document.getElementById("time-remaining"); 
+var endScreenEl = document.getElementById("end-screen");
+// var index = currentQuestion[]
 
 /// FUNCTION TO START THE QUIZ
 function startQuiz() {
     // hide start screen 
-    startScreenEl.style.display = "none";
+    startScreenEl.setAttribute("class", "hide");
+
+    // un-hide timer
+    stopWatchEl.removeAttribute("class");
+
     // un-hide questions section
+    questionsEl.removeAttribute("class");
 
     // start timer
-    
-    // show starting time
-
+    function setTime() {
+        // Sets interval in variable
+        var timerInterval = setInterval(function() {
+          time--;
+          timeRemainingEl.textContent = time;
+          if(time === 0) {
+            // Stops execution of action at set interval
+            clearInterval(timerInterval);
+            // // Calls function to create and append image
+            // sendMessage();
+          }
+      
+        }, 1500);
+        
+      }
+    setTime();    
     // getQuestion();
 }
 
@@ -62,6 +84,9 @@ function startQuiz() {
         // display new time on page
 
         // give them feedback, letting them know it's wrong
+        // var feedbackEl = document.getElementById("feedback") {
+        //     feedbackEl.removeAttribute("class");
+        // }
     // } else {
         // give them feedback, letting them know it's right
     // }
@@ -71,7 +96,9 @@ function startQuiz() {
     // move to next question
 
     // check if we've run out of questions
+    // if (currentQuestion[])
     // if so, end the quiz
+    // function quizEnd();
     // else, get the next question
 // }
 
@@ -79,11 +106,14 @@ function startQuiz() {
 // function quizEnd() {
     // stop timer
 
+    // hide questions section
+    // questionsEl.setAttribute("class", "hide");
     // show end screen
+    // endScreenEl.removeAttribute("class", "hide");
 
     // show final score
 
-    // hide questions section
+    
 // }
 
 /// FUNCTION FOR UPDATING THE TIME ///

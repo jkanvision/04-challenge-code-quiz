@@ -62,7 +62,7 @@ h1 {
 
 }
 
-#end-screen {
+.end-screen {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -80,6 +80,6 @@ h1 {
     right: 35%;
 }
 
-.hide, #end-screen {
+.hide {
     display: none;
 }
