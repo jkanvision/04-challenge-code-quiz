@@ -1,28 +1,38 @@
 // variables to keep track of quiz state
 // currentQuestion
+var currentQuestion = [];
 // time
+
 // timerId
 
-// variables to reference DOM elements
-// var questionsEl = document.getElementById('questions');
 
+// variables to reference DOM elements
+var questionsEl = document.getElementById("questions");
+var startBtnEl = document.getElementById("start-btn");
+var submitBtnEl = document.getElementById("submit");
+var startScreenEl = document.getElementById("start-screen");
+var initialsEl = document.getElementById("initials")
+var timeRemainingEl = document.getElementById("timeRemaining");
 
 /// FUNCTION TO START THE QUIZ
-// function startQuiz() {
+function startQuiz() {
     // hide start screen 
-
+    startScreenEl.style.display = "none";
     // un-hide questions section
 
     // start timer
-
+    
     // show starting time
 
     // getQuestion();
-// }
+}
 
 /// FUNCTION TO GET/SHOW EACH QUESTION ///
 // function getQuestion() {
     // get current question object from array
+
+    // Get random index from array of options
+    // var questionIndex = Math.floor(Math.random() * currentQuestion.length);
 
     // update title with current question
 
@@ -87,7 +97,9 @@
     // get value of input box - for initials
 
     // make sure value wasn't empty
+
     // get saved scores from localstorage, or if not any, set to empty array
+
 
     // format new score object for current user
 
@@ -98,7 +110,10 @@
 
 /// CLICK EVENTS ///
 // user clicks button to submit initials
-
+// submitBtnEl.addEventListener("click", function(event) {
+//     event.preventDefault();
+//     saveHighScore();
+// });
 // user clicks button to start quiz
-
+startBtnEl.addEventListener("click", startQuiz);
 // user clicks on element containing choices

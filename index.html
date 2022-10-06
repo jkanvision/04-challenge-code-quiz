@@ -10,38 +10,40 @@
     </head>
 
     <body>
-        <div>
+        <header id="header" class="hide">
             <!-- <a> tag that references highscores.html so user could go straight to the scores if they want to -->
             <a href="highscore.html">View High Scores</a>
-        </div>
+            <!-- span with timer in it -->
+            <span>
+                <span id="stopWatch">Time:</span>
+                <span id="timeRemaining">60</span>
+            </span>
 
-        <div>
-            <!-- span with your timer in it -->
-        </div>
+        </header>
 
         <div class="wrapper">
             <div id="start-screen" class="start">
                 <h1>Coding Quiz Challenge</h1>
                 <!-- p tag with a little intro about the quiz -->
-                <p>So, you think you can code? Let's test your knowledge! Press start and answer questions about coding. shjsjn fsjtjs sjtjsjtj mtjstkydykyk ustkktkyky tgjtjtst gjjsjs. gghstjttj gjsj gjtklysyts.  </p>
+                <p>So, you think you can code? Let's test your knowledge! Press start and answer some questions about coding.  </p>
 
                 <!-- start button -->
                 <button id="start-btn" class="btn">Start Quiz</button>
             </div>
 
             <div id="questions" class="hide">
-                <h2 id="question-title">vvvvvv</h2>
+                <h2 id="question-title"></h2>
                 <div id="choices" class="choices">
                     <!-- answer buttons -->
-                    <button id="answer-1" class="btn">1.</button>
+                    <!-- <button id="answer-1" class="btn">1.</button>
                     <button id="answer-2" class="btn">2.</button>
                     <button id="answer-3" class="btn">3.</button>
-                    <button id="answer-4" class="btn">4.</button>
+                    <button id="answer-4" class="btn">4.</button> -->
 
                 </div>
             </div>
 
-            <div id="end-screen" class="hide">
+            <div id="end-screen">
                 <h2 id="all-done">All done!</h2>
                 <p>Your final score is <span id="final-score"></span>.</p>
                 <p>
